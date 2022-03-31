@@ -1,0 +1,541 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>ECCV 2022 Workshop on A Challenge for Out-of-Distribution Generalization in Computer Vision</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Welcome to the OOD-CV workshop: A Challenge for Out-of-Distribution Generalization in Computer Vision</h1>
+<!--    <table border="0" align="center">
+        <tr>
+            <td width="700" align="center" valign="middle"><h3>ECCV 2020 Workshop on </h3>
+                <span class="title"><strong>Adversarial Robustness in the Real World
+</strong></span></td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center"><h3>Glasgow, Scotland<br>8:45am - 7:00pm (UTC+1) on August 23rd, 2020</h3></td>
+        </tr>
+    </table>-->
+    <!-- <p><img src="figures/opening-1.jpg" width="1000" align="middle"/></p> -->
+    <!-- <br> -->
+<!--     <h2><a href="https://www.youtube.com/watch?v=lDptIbsMIE0&list=PLWqw4ACzC-1XnyywVl53wc7lEOzSyhHYM">[Video Recording]</a></h2>-->
+    <!-- <h2><a href="https://docs.google.com/presentation/d/1PKI7Wf8QiW6cb_T3hjwe2wcEw3PtMujCBI6crZa99AE/edit?usp=sharing" target="_blank">[Join Instruction]</a></h2> -->
+    <!-- <h2><a href="https://www.facebook.com/2016490571858823/videos/1498926407141264" target="_blank">[Facebook Live]</a></h2> -->
+</div>
+
+</br>
+
+<div class="container">
+    <h2>Overview</h2>
+    <div class="overview">
+        <p>
+        Deep learning sparked a tremendous increase in the performance of computer vision systems over the past decade, under the implicit assumption that the training and test data are drawn independently and identically distributed (IID) from the same distribution. 
+        However, Deep Neural Networks (DNNs) are still far from reaching human-level performance at visual recognition tasks in real-world environments. 
+        The most important limitation of DNNs is that they fail to give reliable predictions in unseen or adverse viewing conditions, which would not fool a human observer, such as when objects have an unusual pose, texture, shape, or when objects occur in an unusual context or in challenging weather conditions. 
+        The lack of robustness of DNNs in such out-of-distribution (OOD) scenarios is generally acknowledged but largely remains unsolved, however, it needs to be overcome to make computer vision a reliable component of AI.
+
+<!-- Computer vision systems nowadays often perform on super-human level in complex cognitive tasks but research in adversarial machine learning also shows that they are not as robust as the human vision system. In this context, perturbation-based adversarial examples have received great attention. -->
+<!-- <br><br> -->
+
+<!-- Recent work has shown that deep neural networks are also easily challenged by real-world adversarial examples, e.g. including partial occlusion, viewpoint changes, atmospheric changes, or style changes. Discovering and harnessing those adversarial examples helps us understand and improve the robustness of computer vision methods in real-world environments, which will also accelerate the deployment of computer vision systems in safety-critical applications. In this workshop, we aim to bring together researchers from various fields, including robust vision, adversarial machine learning, and explainable AI, to discuss recent research and future directions for adversarial robustness and explainability, with a particular focus on real-world scenarios. </p> -->
+        </p>
+    </div>
+</div>
+</br>
+
+<div class="container">
+    <h2>Awards</h2>
+
+    <div class="schedule">
+        <p> TBD </p>
+        <!-- <p>The workshop is sponsored by RealAI. The funding covers a Best Paper Award, a Best Paper Honorable Mention Award, a Female Leader in Computer Vision Award, and multiple travel grants. </p> -->
+    <!-- <h3><p><strong><font color="orange"><li>RealAI Best Paper Award</li></font></strong></p></h3> -->
+    <!-- <p><b>Towards Analyzing Semantic Robustness of Deep Neural Networks</b> -->
+    <!-- <br>Abdullah J Hamdi (KAUST)*; Bernard Ghanem (KAUST))</p> -->
+
+    <!-- <h3><p><strong><font color="orange"><li>RealAI Best Paper Honorable Mention Award</li></font></strong></p></h3> -->
+    <!-- <p><b> Likelihood Landscapes: A Unifying Principle Behind Many Adversarial Defenses </b> -->
+    <!-- <br>Fu Lin (Georgia Institute of Technology)*; Rohit Mittapalli (Georgia Institute of Technology); Prithvijit Chattopadhyay (Georgia Institute of Technology); Daniel Bolya (University of California, Davis); Judy Hoffman (Georgia Tech)</p> -->
+
+    <!-- <h3><p><strong><font color="orange"><li>RealAI Female Leader in Computer Vision Award</li></font></strong></p></h3> -->
+
+    <!-- <h3><p><strong><font color="orange"><li>RealAI Travel Award</li></font></strong></p></h3> -->
+    <!-- <p><b> Prof. Judy Hoffman (Georgia Tech) </b> -->
+    </div>
+</div>
+
+<br>
+<div class="container">
+    <h2>Schedule (TBD)</h2>
+        <div class="overview">
+            <!-- <p>08:45 - 09:00&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>Opening Remarks</b></p> -->
+            <!-- <p>09:00 - 09:30&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp Invited Talk 1: <strong>Alan Yuille - Adversarial Patches and Compositional Networks</strong> -->
+            <!-- <p>09:30 - 10:00 &nbsp &nbsp &nbsp&nbsp&nbsp Invited Talk 2: <strong>Tomaso Poggio - Biologically-inspired Defenses Against Adversarial Attacks</strong></p> -->
+            <!-- <p>10:00 - 11:00 &nbsp &nbsp &nbsp &nbsp <a href="https://iccv21-adv-workshop.github.io/PosterSessionInfo.pdf"><strong>Poster Session 1</strong></a> </p> -->
+            <!-- <p>11:00 - 11:30&nbsp &nbsp &nbsp &nbsp&nbsp  Invited Talk 3: <strong>Raquel Urtasun - Adversarial Robustness for Self-driving</strong></p> -->
+            <!-- <p>11:30 - 12:00 &nbsp &nbsp &nbsp &nbsp  Invited Talk 4: <strong>Aleksander Madry - Adversarial Robustness: An Update from the Trenches</strong></p> -->
+            <!-- <p>12:00 - 12:30&nbsp &nbsp &nbsp &nbsp  <strong>Panel Discussion 1</strong></p> -->
+            <!-- <p>12:30 - 13:30&nbsp &nbsp &nbsp &nbsp&nbsp  Lunch Break </p> -->
+            <!-- <p>13:30 - 14:00 &nbsp &nbsp &nbsp &nbsp  Invited Talk 5: <strong>Kate Saenko</strong></p> -->
+            <!-- <p>14:00 - 14:30&nbsp &nbsp &nbsp &nbsp  Invited Talk 6: <strong>Cihang Xie - Not All Networks Are Born Equal for ROBUSTNESS</strong></p> -->
+            <!-- <p>14:30 - 15:00&nbsp &nbsp &nbsp &nbsp  Invited Talk 7: <strong>Ludwig Schmidt - Adversarial robustness vs. the real world</strong></p> -->
+            <!-- <p>15:00 - 15:30 &nbsp &nbsp &nbsp &nbsp  Invited Talk 8: <strong>Nicholas Carlini - Adversarial Attacks That Matter</strong></p> -->
+            <!-- <p>15:30 - 16:00&nbsp &nbsp &nbsp &nbsp  <strong>Panel Discussion 2</strong></p> -->
+            <!-- <p>16:00 - 17:00&nbsp &nbsp &nbsp &nbsp  <a href="https://iccv21-adv-workshop.github.io/PosterSessionInfo.pdf"><strong>Poster Session 2</strong></a> </p> -->
+        </div>
+</div>
+<br>
+<!--<div class="container">-->
+<!--        <h2>Accepted Papers</h2>-->
+<!--        <div class="overview">-->
+<!--            <ul>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--</div>-->
+
+<!--</br>-->
+<div class="container">
+    <h2>Call For Papers (TBD)</h2>
+    <div class="call4papers">
+            <!-- <p><strong>Submission deadline</strong>:<del>July 31</del> August 5, 2021 Anywhere on Earth (AoE)</p>-->
+<!-- <1!--        <p><strong>Reviews due (tentative)</strong>: June 26, 2021 Anywhere on Earth (AoE)</p>--1>-->
+            <!-- <p><strong>Notification sent to authors</strong>: <del>August 7</del> August 12, 2021 Anywhere on Earth (AoE)</p>-->
+<!-- <1!--            <p><strong>Presentation materials deadline (tentative)</strong>:  August 16, 2021 Anywhere on Earth (AoE)</p>--1>-->
+            <!-- <p><strong>Camera ready deadline</strong>:  <del>August 10</del> August 15, 2021 Anywhere on Earth (AoE)</p>-->
+        <!-- <p><strong>Submission server</strong>: <a href="https://cmt3.research.microsoft.com/AROW2021/">https://cmt3.research.microsoft.com/AROW2021/</a></p>-->
+        <!-- <p><strong>Submission format</strong>:--> 
+            <!--     Submissions need to be anonymized and follow the--> 
+            <!--     <a href="http://iccv2021.thecvf.com/node/4#submission-guidelines">ICCV 2021 Author Instructions</a>.--> 
+            <!--     The workshop considers two types of submissions:--> 
+            <!--     (1) Long Paper: Papers are limited to 8 pages excluding references and will be included in the official ICCV proceedings;-->
+            <!--     (2) Extended Abstract: Papers are limited to 4 pages excluding references and will NOT be included--> 
+            <!--     in the official ICCV proceedings. <b> Please use the <a href="http://iccv2021.thecvf.com/sites/default/files/2020-09/iccv2021AuthorKit.zip">ICCV</a> template for extended abstracts </b>.-->
+            <!--     <br>-->
+            <!--     Based on the PC recommendations, the accepted long papers/extended abstracts will be allocated either a--> 
+            <!--     contributed talk or a poster presentation.-->
+        
+        <!-- <p>We invite submissions on <strong>any aspect of adversarial robustness in real-world computer vision</strong>.--> 
+           <!-- This includes, but is not limited to:</p>-->
+        <!-- <ul>-->
+            <!-- <li> Discovery of real-world adversarial examples</li>-->
+            <!-- <li> Novel architectures with robustness to occlusion, viewpoint, and other real-world domain shifts</li>-->
+            <!-- <li> Domain adaptation techniques for building robust vision system in the real world</li>-->
+            <!-- <li> Datasets for evaluating model robustness</li>-->
+            <!-- <li> Adversarial machine learning for diagnosing and understanding limitations of computer vision systems</li>-->
+            <!-- <li> Improving generalization performance of computer vision systems to out-of-distribution samples</li>-->
+            <!-- <li> Structured deep models and explainable AI</li>-->
+        <!-- </ul>-->
+    </div>
+</div>
+
+<br>
+<!-- <div class="container"> -->
+<!--         <h2>Accepted Long Paper (<a href="https://openaccess.thecvf.com/ICCV2021_workshops/AROW">Proceeding</a>) </h2> -->
+<!--         <div class="overview"> -->
+<!--             <ul> -->
+<!--             <li><b> On the Effect of Pruning on Adversarial Robustness </b> [<a href="https://openaccess.thecvf.com/content/ICCV2021W/AROW/papers/Jordao_On_the_Effect_of_Pruning_on_Adversarial_Robustness_ICCVW_2021_paper.pdf">Paper</a>] [<a href="posters/2.pdf">Poster</a>] <br> Artur Jordão L Correia (University of Campinas)*; Hélio Pedrini (University of Campinas) </li> -->
+<!--             <li><b> Trojan Signatures in DNN Weights </b> [<a href="https://openaccess.thecvf.com/content/ICCV2021W/AROW/papers/Fields_Trojan_Signatures_in_DNN_Weights_ICCVW_2021_paper.pdf">Paper</a>]  [<a href="posters/5.pdf">Poster</a>] <br> Greg Fields (UC San Diego)*; Mohammad Samragh Razlighi (University of California San Diego); Mojan Javaheripi (UC San Diego); Farinaz Koushanfar (UCSD); Tara Javidi (University of California San Diego) </li> -->
+<!--             <li><b> Impact of Colour on Robustness of Deep Neural Networks </b> [<a href="https://openaccess.thecvf.com/content/ICCV2021W/AROW/papers/De_Impact_of_Colour_on_Robustness_of_Deep_Neural_Networks_ICCVW_2021_paper.pdf">Paper</a>] <br> Kanjar De (Lulea University of Technology)*; Marius Pedersen (NTNU, Gjovik, Norway) </li> -->
+<!--             <li><b> Evasion Attack STeganography: Turning Vulnerability Of Machine Learning To Adversarial Attacks Into A Real-world Application </b> [<a href="https://openaccess.thecvf.com/content/ICCV2021W/AROW/papers/Ghamizi_Evasion_Attack_STeganography_Turning_Vulnerability_of_Machine_Learning_To_Adversarial_ICCVW_2021_paper.pdf">Paper</a>] <br> Salah GHAMIZI (SnT Luxembourg)*; Maxime Cordy (University of Luxembourg); Mike Papadakis (University of Luxembourg); Yves Le Traon (University of Luxembourg) </li> -->
+<!--             <li><b> Can Targeted Adversarial Examples Transfer When the Source and Target Models Have No Label Space Overlap? </b> [<a href="https://openaccess.thecvf.com/content/ICCV2021W/AROW/papers/Inkawhich_Can_Targeted_Adversarial_Examples_Transfer_When_the_Source_and_Target_ICCVW_2021_paper.pdf">Paper</a>] <br> Nathan Inkawhich (Duke University)*; Kevin J Liang (Facebook); Jingyang Zhang (Duke University); Huanrui Yang (Duke University); Hai Li (Duke University); Yiran Chen (Duke University) </li> -->
+<!--             <li><b> Encouraging Intra-Class Diversity Through a Reverse Contrastive Loss for Single-Source Domain Generalization </b> [<a href="https://openaccess.thecvf.com/content/ICCV2021W/AROW/papers/Duboudin_Encouraging_Intra-Class_Diversity_Through_a_Reverse_Contrastive_Loss_for_Single-Source_ICCVW_2021_paper.pdf">Paper</a>]  [<a href="posters/13.pdf">Poster</a>] <br> Thomas J Duboudin (École Centrale de Lyon / LIRIS)*; emmanuel dellandrea (EC Lyon); Corentin Abgrall (Thales LAS France); Gilles Henaff (Thales Optronique S.A.S.); Liming Chen (Ecole Centrale de Lyon) </li> -->
+<!--             <li><b> A Hierarchical Assessment of Adversarial Severity </b> [<a href="https://openaccess.thecvf.com/content/ICCV2021W/AROW/papers/Jeanneret_A_Hierarchical_Assessment_of_Adversarial_Severity_ICCVW_2021_paper.pdf">Paper</a>]  [<a href="posters/17.pdf">Poster</a>] <br> Guillaume Jeanneret (Universidad de los Andes)*; Juan C Perez (Universidad de los Andes; King Abdullah University of Science and Technology); Pablo Arbelaez (Universidad de los Andes) </li> -->
+<!--             <li><b> Detecting and Segmenting Adversarial Graphics Patterns from Images </b> [<a href="https://openaccess.thecvf.com/content/ICCV2021W/AROW/papers/Qu_Detecting_and_Segmenting_Adversarial_Graphics_Patterns_From_Images_ICCVW_2021_paper.pdf">Paper</a>] <br> Xiangyu Qu (Purdue University)*; Stanley Chan (Purdue University, USA) </li> -->
+<!--             <li><b> Enhancing Adversarial Robustness via Test-time Transformation Ensembling </b> [<a href="https://openaccess.thecvf.com/content/ICCV2021W/AROW/papers/Perez_Enhancing_Adversarial_Robustness_via_Test-Time_Transformation_Ensembling_ICCVW_2021_paper.pdf">Paper</a>]  [<a href="posters/20.pdf">Poster</a>] <br> Juan C Perez (Universidad de los Andes; King Abdullah University of Science and Technology)*; Motasem Alfarra (KAUST); Guillaume Jeanneret (Universidad de los Andes); Laura Rueda-Gensini (Universidad de los Andes); Ali K Thabet (Facebook); Bernard Ghanem (KAUST); Pablo Arbelaez (Universidad de los Andes) </li> -->
+<!--             <li><b> Optical Adversarial Attack </b> [<a href="https://openaccess.thecvf.com/content/ICCV2021W/AROW/papers/Gnanasambandam_Optical_Adversarial_Attack_ICCVW_2021_paper.pdf">Paper</a>] <br> Abhiram Gnanasambandam (Purdue University)*; Alex M. Sherman (Purdue University); Stanley Chan (Purdue University, USA) </li> -->
+<!--             <li><b> Countering Adversarial Examples: Combining Input Transformation and Noisy Training </b> [<a href="https://openaccess.thecvf.com/content/ICCV2021W/AROW/papers/Zhang_Countering_Adversarial_Examples_Combining_Input_Transformation_and_Noisy_Training_ICCVW_2021_paper.pdf">Paper</a>] <br> Cheng Zhang (Nanjing University of Aeronautics and Astronautics)*; Pan Gao (Nanjing University of Aeronautics and Astronautics) </li> -->
+<!--             <li><b> Patch Attack Invariance: How Sensitive are Patch Attacks to 3D Pose? </b> [<a href="https://openaccess.thecvf.com/content/ICCV2021W/AROW/papers/Lennon_Patch_Attack_Invariance_How_Sensitive_Are_Patch_Attacks_to_3D_ICCVW_2021_paper.pdf">Paper</a>] <br> Max Lennon (JHU/APL); Nathan Drenkow (Johns Hopkins University Applied Physics Laboratory)*; Philippe Burlina (JHU/APL/CS/SOM) </li> -->
+<!--             <li><b> Can Optical Trojans Assist Adversarial Perturbations? </b> [<a href="https://openaccess.thecvf.com/content/ICCV2021W/AROW/papers/Boloor_Can_Optical_Trojans_Assist_Adversarial_Perturbations_ICCVW_2021_paper.pdf">Paper</a>] <br> Adith Boloor (Washington University in St. Louis)*; Tong Wu (Washington University in St. Louis); Patrick Naughton (Washington University in St. Louis); Ayan Chakrabarti (Washington University in St. Louis); Xuan Zhang (Washington University in St. Louis); Yevgeniy Vorobeychik (Washington University in St. Louis) </li> -->
+<!--             <li><b> Towards Category and Domain Alignment: Category-Invariant Feature Enhancement for Adversarial Domain Adaptation </b> [<a href="https://openaccess.thecvf.com/content/ICCV2021W/AROW/papers/Wu_Towards_Category_and_Domain_Alignment_Category-Invariant_Feature_Enhancement_for_Adversarial_ICCVW_2021_paper.pdf">Paper</a>]  [<a href="posters/29.pdf">Poster</a>] <br> Yuan Wu (Carleton University)*; Diana Inkpen (University of Ottawa); Ahmed El-Roby (Carleton University) </li> -->
+<!--             <li><b> AdvFoolGen: Creating Persistent Troubles for Deep Classifiers </b> [<a href="https://openaccess.thecvf.com/content/ICCV2021W/AROW/papers/Ding_AdvFoolGen_Creating_Persistent_Troubles_for_Deep_Classifiers_ICCVW_2021_paper.pdf">Paper</a>]  [<a href="posters/36.pdf">Poster</a>] <br> Yuzhen Ding (Arizona State University)*; Nupur  Thakur  (Arizona State University); baoxin Li (Arizona State University) </li> -->
+<!--             <li><b> On Adversarial Robustness: A Neural Architecture Search perspective </b> [<a href="https://openaccess.thecvf.com/content/ICCV2021W/AROW/papers/Devaguptapu_On_Adversarial_Robustness_A_Neural_Architecture_Search_Perspective_ICCVW_2021_paper.pdf">Paper</a>] <br> Chaitanya Devaguptapu (Indian Institute of Technology, Hyderabad)*; Devansh Agarwal (IIT Hyderabad); Gaurav Mittal (Microsoft); Pulkit Gopalani (IIT Kanpur); Vineeth N Balasubramanian (Indian Institute of Technology, Hyderabad) </li> -->
+<!--             </ul> -->
+<!--         </div> -->
+<!-- </div> -->
+
+<!-- <br> -->
+<!-- <div class="container"> -->
+<!--         <h2>Accepted Extended Abstract</h2> -->
+<!--         <div class="overview"> -->
+<!--             <ul> -->
+<!--             <li><b> Mental Models of Adversarial Machine Learning</b> [<a href="short_paper/M_AML_Paper_Workshop.pdf">Paper</a>] <br>Lukas Bieringer (QuantPi); Kathrin Grosse (University of Cagliari)*; Michael Michael (CISPA Helmholtz Center for Information Security); Katharina   Krombholz (CISPA − Helmholtz Center for Information Securit)  </li> -->
+<!--             <li><b> Defending Object Detection Networks Against Adversarial Patch Attacks</b> [<a href="short_paper/Vax_a_Net_Object_Detection_ICCV_Workshop(1).pdf">Paper</a>]  [<a href="posters/7.pdf">Poster</a>] <br>Thomas Gittings (University of Surrey)*; Steve Schneider (University of Surrey); John Collomosse (Adobe Research)  </li> -->
+<!--             <li><b> An Adversarial Attack on DNN-based Adaptive Cruise Control Systems</b> [<a href="short_paper/yanan_arow.pdf">Paper</a>]  [<a href="posters/8.pdf">Poster</a>] <br>Yanan Guo (University of Pittsburgh)*; Christopher Dipalma (University of California, Irvine); TAKAMI SATO (University of California, Irvine); Yulong Cao (University of Michigan, Ann Arbor	); Qi Alfred Chen (UC Irvine); Yueqiang Cheng (NIO)</li> -->
+<!--             <li><b> Towards Achieving Adversarial Robustness Beyond Perceptual Limits</b> [<a href="short_paper/OAAT_main_15.pdf">Paper</a>] [<a href="short_paper/OAAT_suppl_15.pdf">Supp</a>]  [<a href="posters/15.pdf">Poster</a>]  [<a href="videos/15.mp4">Videos</a>] <br>Sravanti Addepalli (Indian Institute of Science)*; Samyak Jain (Indian Institute of Technology (BHU), Varanasi); Gaurang Sriramanan (Indian Institute of Science); Shivangi Khare (Indian Institute of Science); Venkatesh Babu RADHAKRISHNAN (Indian Institute of Science)</li> -->
+<!--             <li><b> Backdoor Learning Curves: Explaining Backdoor Poisoning Beyond Influence Functions</b> [<a href="short_paper/Paper_33.pdf">Paper</a>]  [<a href="posters/33.pdf">Poster</a>]  [<a href="videos/33.mp4">Videos</a>] <br>Antonio E Cinà (Ca' Foscari University of Venice)*; Kathrin Grosse (University of Cagliari); Ambra Demontis (University of Cagliari ); Sebastiano Vascon (Ca' Foscari University of Venice & European Centre for Living Technology); Battista Biggio (University of Cagliari, Italy); Fabio Roli (University of Cagliari); Marcello Pelillo (Ca' Foscari University of Venice)</li> -->
+<!--             <li><b> Leveraging Test-Time Consensus Prediction for Robustness against Unseen Noise</b> [<a href="short_paper/ICCV_workshop_submission_Leveraging Test-Time Consensus Prediction for Robustness against Unseen Noise_main.pdf">Paper</a>] <br>Anindya Sarkar (IIT Hyderabad); Anirban Sarkar (IIT Hyderabad)*; Vineeth N Balasubramanian (Indian Institute of Technology, Hyderabad)</li> -->
+<!--             <li><b> Are socially-aware trajectory prediction models really socially-aware?</b> [<a href="short_paper/s-attack-arow2021.pdf">Paper</a>]  [<a href="posters/41.pdf">Poster</a>]  <br>Saeed Saadatnejad (EPFL)*; Mohammadhossein Bahari (EPFL); Seyed-Mohsen Moosavi-Dezfooli (ETH Zurich); Alexandre Alahi (EPFL)</li> -->
+<!--             <li><b> Efficient Training Methods for Achieving Adversarial Robustness Against Sparse Attacks</b> [<a href="short_paper/OFC_main_45.pdf">Paper</a>] [<a href="short_paper/OFC_supple_45.pdf">Supp</a>] [<a href="posters/45.pdf">Poster</a>] <br>Sravanti Addepalli (Indian Institute of Science)*; Dhruv Behl (Indian Institute of Science); Gaurang Sriramanan (Indian Institute of Science); Venkatesh Babu RADHAKRISHNAN (Indian Institute of Science)</li> -->                    
+<!--             </ul> -->
+<!--         </div> -->
+<!-- </div> -->
+
+<!-- </br> -->
+
+<div class="container">
+    <h2>Speakers (TBD)</h2>
+    <!-- <div> -->
+    <!--     <div class="instructor"> -->
+    <!--         <a href="http://www.cs.toronto.edu/~urtasun/"> -->
+    <!--             <div class="instructorphoto"><img src="figures/2021_cropped_photos/RaquelUrtasun.png"></div> -->
+    <!--             <div>Raquel Urtasun<br>University of Toronto</div> -->
+    <!--         </a> -->
+    <!--     </div> -->
+
+    <!--     <div class="instructor"> -->
+    <!--         <a href="http://ai.bu.edu/ksaenko.html"> -->
+    <!--             <div class="instructorphoto"><img src="figures/2021_cropped_photos/KateSaenko.png"></div> -->
+    <!--             <div>Kate Saenko<br>Boston University</div> -->
+    <!--         </a> -->
+    <!--     </div> -->
+
+    <!--     <div class="instructor"> -->
+    <!--         <a href="http://www.cs.jhu.edu/~ayuille/index.html"> -->
+    <!--             <div class="instructorphoto"><img src="figures/alanyuille.png"></div> -->
+    <!--             <div>Alan Yuille<br>Johns Hopkins University</div> -->
+    <!--         </a> -->
+    <!--     </div> -->
+
+    <!--     <div class="instructor"> -->
+    <!--         <a href="https://cihangxie.github.io/"> -->
+    <!--             <div class="instructorphoto"><img src="figures/cihangxie.jpg"></div> -->
+    <!--             <div>Cihang Xie<br>UCSC</div> -->
+    <!--         </a> -->
+    <!--     </div> -->
+
+    <!-- </div> -->
+
+    <!-- <p></p> -->
+    <!--     <div class="instructor"> -->
+    <!--         <a href="https://people.csail.mit.edu/madry/"> -->
+    <!--             <div class="instructorphoto"><img src="figures/2021_cropped_photos/AleksanderMądry.png"></div> -->
+    <!--             <div>Aleksander Mądry<br>MIT</div> -->
+    <!--         </a> -->
+    <!--     </div> -->
+            
+    <!--     <div class="instructor"> -->
+    <!--         <a href="https://people.csail.mit.edu/ludwigs/"> -->
+    <!--             <div class="instructorphoto"><img src="figures/2021_cropped_photos/LudwigSchmidt.png"></div> -->
+    <!--             <div>Ludwig Schmidt<br>Toyota Research</div> -->
+    <!--         </a> -->
+    <!--     </div> -->
+
+    <!--     <div class="instructor"> -->
+    <!--         <a href="https://mcgovern.mit.edu/profile/tomaso-poggio/"> -->
+    <!--             <div class="instructorphoto"><img src="figures/2021_cropped_photos/TomasoPoggio.png"></div> -->
+    <!--             <div>Tomaso Poggio<br>MIT</div> -->
+    <!--         </a> -->
+    <!--     </div> -->
+
+    <!--     <div class="instructor"> -->
+    <!--         <a href="https://nicholas.carlini.com/"> -->
+    <!--             <div class="instructorphoto"><img src="figures/2021_cropped_photos/NicholasCarlini.png"></div> -->
+    <!--             <div>Nicholas Carlini<br>Google Brain</div> -->
+    <!--         </a> -->
+    <!--     </div> -->
+    
+</div>
+<br>
+<div class="container">
+    <h2>Organizing Committee</h2>
+
+    <div>
+        
+        <div class="instructor">
+            <a href="https://info.zhaobc.me">
+                <div class="instructorphoto"><img src="figures/2021_cropped_photos/BingchenZhao.jpeg"></div>
+                <div>Bingchen Zhao<br>Tongji University</div>
+            </a>
+        </div>
+
+        <!-- <div class="instructor"> -->
+        <!--     <a href="https://adamkortylewski.com/"> -->
+        <!--         <div class="instructorphoto"><img src="figures/AdamKortylewski.png"></div> -->
+        <!--         <div>Adam Kortylewski<br>Max Planck institut informatik</div> -->
+        <!--     </a> -->
+        <!-- </div> -->
+
+        <div class="instructor">
+            <a href="">
+                <div class="instructorphoto"><img src="figures/2021_cropped_photos/ShaozuoYu.jpeg"></div>
+                <div>Shaozuo Yu<br>Tongji University</div>
+            </a>
+        </div>
+
+
+        <div class="instructor">
+            <a href="https://jiahaoplus.github.io/">
+                <div class="instructorphoto"><img src="figures/2021_cropped_photos/JiahaoWang.jpeg"></div>
+                <div>Jiahao Wang<br>MPII</div>
+            </a>
+        </div>
+
+        <div class="instructor">
+            <a href="https://laos-y.github.io/">
+                <div class="instructorphoto"><img src="figures/2021_cropped_photos/SiweiYang.jpeg"></div>
+                <div>Siwei Yang<br>LunarAI</div>
+            </a>
+        </div>
+        
+        <div class="instructor">
+            <a href="https://people.eecs.berkeley.edu/~hendrycks/">
+                <div class="instructorphoto"><img src="figures/2021_cropped_photos/DanHendrycks.jpeg"></div>
+                <div>Dan Hendrycks<br>UCB</div>
+            </a>
+        </div>
+        
+
+        <!-- <div class="instructor"> -->
+        <!--     <a href="https://cihangxie.github.io/"> -->
+        <!--         <div class="instructorphoto"><img src="figures/cihangxie.jpg"></div> -->
+        <!--         <div>Cihang Xie<br>UCSC</div> -->
+        <!--     </a> -->
+        <!-- </div> -->
+
+        <!-- <div class="instructor"> -->
+        <!--     <a href="https://scholar.google.com/citations?user=N1-l4GsAAAAJ&hl=en"> -->
+        <!--         <div class="instructorphoto"><img src="figures/2021_cropped_photos/YutongBai.png"></div> -->
+        <!--         <div>Yutong Bai<br>Johns Hopkins University</div> -->
+        <!--     </a> -->
+        <!-- </div> -->
+
+        <!-- <div class="instructor">
+            <a href="http://songbai.site/">
+                <div class="instructorphoto"><img src="figures/songbai.png"></div>
+                <div>Song Bai<br>University of Oxford</div>
+            </a>
+        </div>
+
+        <div class="instructor">
+            <a href="https://zhaoweicai.github.io/">
+                <div class="instructorphoto"><img src="figures/ZhaoweiCai.jpeg"></div>
+                <div>Zhaowei Cai<br>Amazon</div>
+            </a>
+        </div> -->
+    </div>
+
+
+    <p></p>
+
+    <!-- <div> -->
+    <!--     <div class="instructor"> -->
+    <!--         <a href="https://scholar.google.com/citations?user=YR7re-cAAAAJ&hl"> -->
+    <!--             <div class="instructorphoto"><img src="figures/2021_cropped_photos/AngtianWang.png"></div> -->
+    <!--             <div>Angtian Wang<br>Johns Hopkins University</div> -->
+    <!--         </a> -->
+    <!--     </div> -->
+
+    <!--     <div class="instructor"> -->
+    <!--         <a href="https://chenglin-yang.github.io"> -->
+    <!--             <div class="instructorphoto"><img src="figures/2021_cropped_photos/ChenglinYang.png"></div> -->
+    <!--             <div>Chenglin Yang<br>Johns Hopkins University</div> -->
+    <!--         </a> -->
+    <!--     </div> -->
+
+    <!--     <div class="instructor"> -->
+    <!--         <a href="https://jungyhuk.github.io/"> -->
+    <!--             <div class="instructorphoto"><img src="figures/2021_cropped_photos/XinyunChen.png"></div> -->
+    <!--             <div>Xinyun Chen<br>UCB</div> -->
+    <!--         </a> -->
+    <!--     </div> -->
+
+    <!--     <div class="instructor"> -->
+    <!--         <a href="http://ml.cs.tsinghua.edu.cn/~yinpeng/"> -->
+    <!--             <div class="instructorphoto"><img src="figures/2021_cropped_photos/YinpengDong.png"></div> -->
+    <!--             <div>Yinpeng Dong<br>Tsinghua University</div> -->
+    <!--         </a> -->
+    <!--     </div> -->
+    <!-- </div> -->
+
+    <!-- <p></p> -->
+
+    <!-- <div> -->
+    <!--     <div class="instructor"> -->
+    <!--         <a href="http://ml.cs.tsinghua.edu.cn/~tianyu/"> -->
+    <!--             <div class="instructorphoto"><img src="figures/2021_cropped_photos/TianyuPang.png"></div> -->
+    <!--             <div>Tianyu Pang<br>Tsinghua University</div> -->
+    <!--         </a> -->
+    <!--     </div> -->
+
+    <!--     <div class="instructor"> -->
+    <!--         <a href="https://scholar.google.com/citations?user=nHKExN0AAAAJ&hl"> -->
+    <!--             <div class="instructorphoto"><img src="figures/2021_cropped_photos/JieruMei.png"></div> -->
+    <!--             <div>Jieru Mei<br>Johns Hopkins University</div> -->
+    <!--         </a> -->
+    <!--     </div> -->
+
+    <!--     <div class="instructor"> -->
+    <!--         <a href="https://natanielruiz.github.io/"> -->
+    <!--             <div class="instructorphoto"><img src="figures/NatanielRuiz.png"></div> -->
+    <!--             <div>Nataniel Ruiz<br>Boston University</div> -->
+    <!--         </a> -->
+    <!--     </div> -->
+            
+    <!--     <div class="instructor"> -->
+    <!--         <a href="https://scholar.google.com/citations?user=V5NWZc8AAAAJ&hl=en"> -->
+    <!--             <div class="instructorphoto"><img src="figures/2021_cropped_photos/AlexanderRobey.png"></div> -->
+    <!--             <div>Alexander Robey<br>UPenn</div> -->
+    <!--         </a> -->
+    <!--     </div> -->
+
+    <!-- </div> -->
+
+    <!-- <p></p> -->
+
+    <!-- <div> -->
+    <!--     <div class="instructor"> -->
+    <!--         <a href="https://scholar.google.com/citations?user=v-JL-hsAAAAJ&hl=en"> -->
+    <!--             <div class="instructorphoto"><img src="figures/2021_cropped_photos/WielandBrendel.png"></div> -->
+    <!--             <div>Wieland Brendel<br>University of Tübingen</div> -->
+    <!--         </a> -->
+    <!--     </div> -->
+            
+    <!--     <div class="instructor"> -->
+    <!--         <a href="http://bethgelab.org/people/matthias/"> -->
+    <!--             <div class="instructorphoto"><img src="figures/2021_cropped_photos/MatthiasBethge.png"></div> -->
+    <!--             <div>Matthias Bethge<br>University of Tübingen</div> -->
+    <!--         </a> -->
+    <!--     </div> -->
+
+    <!--     <div class="instructor"> -->
+    <!--         <a href="https://www.georgejpappas.org/"> -->
+    <!--             <div class="instructorphoto"><img src="figures/2021_cropped_photos/GeorgePappas.png"></div> -->
+    <!--             <div>George Pappas<br>UPenn</div> -->
+    <!--         </a> -->
+    <!--     </div> -->
+
+    <!--     <div class="instructor"> -->
+    <!--         <a href="https://resvirtualis.github.io/"> -->
+    <!--             <div class="instructorphoto"><img src="figures/2021_cropped_photos/PhilippeBurlina.png"></div> -->
+    <!--             <div>Philippe Burlina<br>Johns Hopkins University</div> -->
+    <!--         </a> -->
+    <!--     </div> -->
+
+    <!-- </div> -->
+
+    <!-- <p></p> -->
+
+    <div>
+        <div class="instructor">
+            <a href="https://adamkortylewski.com/">
+                <div class="instructorphoto"><img src="figures/AdamKortylewski.png"></div>
+                <div>Adam Kortylewski<br>MPII</div>
+            </a>
+        </div>
+
+        <div class="instructor">
+            <a href="https://people.eecs.berkeley.edu/~dawnsong/">
+                <div class="instructorphoto"><img src="figures/2021_cropped_photos/DawnSong.png"></div>
+                <div>Dawn Song<br>UCB</div>
+            </a>
+        </div>
+
+        <div class="instructor">
+            <a href="http://www.cs.jhu.edu/~ayuille/index.html">
+                <div class="instructorphoto"><img src="figures/alanyuille.png"></div>
+                <div>Alan Yuille<br>Johns Hopkins University</div>
+            </a>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+<!-- <div class="container"> -->
+<!--     <h2>Program Committee</h2> -->
+<!--     <div class="pcs-row pcs"> -->
+<!--        <div class="pcs-column"> -->
+<!--            <ul> -->
+
+<!--             <li>Aishan Liu (Beihang University)</li> -->
+<!--             <li>Akshayvarun Subramanya (UMBC)</li> -->
+<!--             <li>Alexander Robey (University of Pennsylvania)</li> -->
+<!--             <li>Ali Shahin Shamsabadi (Queen Mary University of London, UK)</li> -->
+<!--             <li>Angtian Wang (Johns Hopkins University)</li> -->
+<!--             <li>Aniruddha Saha (University of Maryland Baltimore County)</li> -->
+<!--             <li>Anshuman Suri (University of Virginia)</li> -->
+<!--             <li>Bernhard Egger (Massachusetts Institute of Technology)</li> -->
+<!--             <li>Chenglin Yang (Johns Hopkins University)</li> -->
+<!--             <li>Chirag Agarwal (Harvard University)</li> -->
+<!--             <li>Gaurang Sriramanan (Indian Institute of Science)</li> -->
+<!--             <li>Jamie Hayes </li> -->
+<!--             <li>Jiachen Sun (University of Michigan)</li> -->
+<!--             <li>Jieru Mei (Johns Hopkins University)</li> -->
+<!--             <li>Ju He (Johns Hopkins University)</li> -->
+<!--             <li>Kibok Lee (University of Michigan)</li> -->
+<!--             <li>Lifeng Huang (SunYat-sen university)</li> -->
+<!--             <li>Maura Pintor (University of Cagliari)</li> -->
+<!--             <li>Muhammad Awais (Kyung-Hee University)</li> -->
+
+
+<!--            </ul> -->
+<!--         </div> -->
+<!--         <div class="pcs-column"> -->
+<!--             <ul> -->
+
+<!--             <li>Muzammal Naseer (ANU)</li> -->
+<!--             <li>Nataniel Ruiz (Boston University)</li> -->
+<!--             <li>Qihang Yu (Johns Hopkins University)</li> -->
+<!--             <li>Qing Jin (Northeastern University)</li> -->
+<!--             <li>Rajkumar Theagarajan (University of California, Riverside)</li> -->
+<!--             <li>Ruihao Gong (SenseTime)</li> -->
+<!--             <li>Shiyu Tang (Beihang University)</li> -->
+<!--             <li>shunchang liu (Beihang University)</li> -->
+<!--             <li>Sravanti Addepalli (Indian Institute of Science)</li> -->
+<!--             <li>Tianlin Li (NTU)</li> -->
+<!--             <li>Wenxiao Wang (Tsinghua University)</li> -->
+<!--             <li>Won Park (University of Michigan)</li> -->
+<!--             <li>Xiangning Chen (University of California, Los Angeles)</li> -->
+<!--             <li>Xiaohui Zeng (University of Toronto)</li> -->
+<!--             <li>Xingjun Ma (Deakin University)</li> -->
+<!--             <li>Xinwei Zhao (Drexel University)</li> -->
+<!--             <li>yulong cao (University of Michigan, Ann Arbor)</li> -->
+<!--             <li>Yutong Bai (Johns Hopkins University)</li> -->
+<!--             <li>Zihao Xiao (Johns Hopkins University)</li> -->
+<!--             <li>Zixin Yin (Beihang University)</li> -->
+
+<!--             </ul> -->
+<!--         </div> -->
+<!--     </div> -->
+<!-- </div> -->
+
+<br>
+
+<!-- <div class="container"> -->
+<!--     <h2>Sponsor</h2> -->
+<!--     <div> -->
+<!--         <a href="https://realai.ai/"> <img width="350" src="figures/LOGO-RealAI.png"> </a> -->
+<!--     </div> -->
+<!-- </div> -->
+
+<!--</br>-->
+<br>
+<div class="container">
+    <h2>Related Workshops</h2>
+    <p align="left"><a href="https://iccv21-adv-workshop.github.io/">Adversarial Robustness in the Real World (Workshop at ICCV 2021)</a></p>
+    <p align="left"><a href="https://sites.google.com/view/udlworkshop2021/home">Uncertainty & Robustness in Deep Learning (Workshop at ICML 2021)</a></p>
+    <p align="left"><a href="https://aisecure-workshop.github.io/aml-iclr2021/">Security and Safety in Machine Learning Systems (Workshop at ICLR 2021)</a></p>
+    <p align="left"><a href="https://iclr2021generalization.github.io/">Generalization beyond the Training Distribution in Brains and Machines (Workshop at ICLR 2021)</a></p>
+    <p align="left"><a href="https://advm-workshop-2021.github.io/">1st International Workshop on Adversarial Learning for Multimedia (Workshop at ACM Multimedia 2021)</a></p>
+    <p align="left"><a href="https://aisecure-workshop.github.io/amlcvpr2021/">Workshop on Adversarial Machine Learning in Real-World Computer Vision Systems and Online Challenges (Workshop at CVPR 2021)</a></p>
+</div>
+
+</br>
+
+<div class="containersmall">
+    <p>Please contact <a href="mailto:zhaobc.gm@gmail.com">Bingchen Zhao</a> or <a href="mailto:akortyle@mpi-inf.mpg.de">Adam Kortylewski</a> if you have questions. The webpage template is by the courtesy of <a href="https://eccv20-adv-workshop.github.io/">ECCV 2020 Workshop on Adversarial Robustness in the Real World</a>. </p>
+</div>
+
+<!--<p align="center" class="acknowledgement">Last updated: Jan. 6, 2017</p>-->
+</body>
+</html>
