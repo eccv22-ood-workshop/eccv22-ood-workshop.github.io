@@ -2180,7 +2180,7 @@ input, select, textarea {
         background-size: cover;
         background-position: center center;
         background-attachment: fixed;
-        color: #fff;
+        color: rgb(255, 255, 255);
         text-align: center;
         padding: 7.5em 0 2em 0;
         cursor: default;
@@ -2211,7 +2211,7 @@ input, select, textarea {
             }
 
         #header h1 {
-            color: #fff;
+            color: rgb(255, 255, 255);
             font-size: 3em;
             line-height: 1em;
         }
