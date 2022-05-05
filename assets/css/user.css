@@ -1,0 +1,22 @@
+.index-title-s {
+    /* display: inline-block; */
+    font-size: 30%;
+    margin-top: 3%;
+    /* vertical-align: bottom */
+}
+
+.index-title-l {
+    /* color: red; */
+    font-weight: 600;
+    /* display: inline-block; */
+    /* font-size: 30%; */
+    /* margin-top: 3%; */
+    /* vertical-align: bottom */
+}
+
+.shit {
+    display: flex;
+    justify-content: center;
+    vertical-align: bottom;
+    /* margin-top: auto; */
+}
