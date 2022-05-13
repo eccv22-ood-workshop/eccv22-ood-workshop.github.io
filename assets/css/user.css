@@ -1,17 +1,26 @@
 .index-title-s {
     /* display: inline-block; */
-    font-size: 30%;
-    margin-top: 3%;
+    /* font-size: 30%;
+    margin-top: 3%; */
+    font-size: 50%;
+    margin-top: 2%;
     /* vertical-align: bottom */
 }
 
 .index-title-l {
     /* color: red; */
-    font-weight: 600;
+    font-weight: 550;
+    color: greenyellow;
     /* display: inline-block; */
     /* font-size: 30%; */
     /* margin-top: 3%; */
     /* vertical-align: bottom */
+}
+
+
+.index-title-c {
+    color: greenyellow;
+    font-weight: 800;
 }
 
 .shit {
