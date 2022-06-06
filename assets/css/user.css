@@ -75,3 +75,10 @@ th {
   color: #535353;
 }
 
+.ijcv-logo {
+    width: 10%;
+    height: auto;
+    position:absolute;
+    right: 0%;
+    bottom: 2%;
+}
