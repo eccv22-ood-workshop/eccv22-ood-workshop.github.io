@@ -50,11 +50,12 @@
     font-weight: 800;
 } */
 
-.highlight {
-    display: flex;
+.highlight span{
+    /* display: flex;
     justify-content: center;
-    vertical-align: bottom;
+    vertical-align: bottom; */
     /* margin-top: auto; */
+    margin-right: -0.2em;
 }
 
 
