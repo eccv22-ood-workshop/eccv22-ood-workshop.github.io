@@ -50,12 +50,13 @@
     font-weight: 800;
 } */
 
-.highlight span{
+.highlight {
     /* display: flex;
     justify-content: center;
     vertical-align: bottom; */
     /* margin-top: auto; */
     margin-right: -0.2em;
+    color: #01b462;
 }
 
 
