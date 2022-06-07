@@ -20,7 +20,7 @@
 
 .index-title-c {
     color: greenyellow;
-    font-weight: 800;
+    /* font-weight: 800; */
 }
 
 /* 234,67,53 */
@@ -77,7 +77,8 @@ th {
 
 .ijcv-logo {
     width: auto;
-    height: 60%;
+    max-width: 28%;
+    height: 50%;
     position:absolute;
     right: 0%;
     bottom: 2%;

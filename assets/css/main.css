@@ -2218,6 +2218,10 @@ input, select, textarea {
             line-height: 1em;
         }
 
+        #header h4 {
+            color: rgb(255, 255, 255);
+        }
+
             #header h1 a {
                 color: inherit;
             }
