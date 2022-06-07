@@ -2184,7 +2184,7 @@ input, select, textarea {
         background-attachment: fixed;
         color: rgb(255, 255, 255);
         text-align: center;
-        padding: 7.5em 0 2em 0;
+        padding: 7.5em 0 4em 0;
         cursor: default;
     }
 
