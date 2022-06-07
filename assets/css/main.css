@@ -2184,7 +2184,7 @@ input, select, textarea {
         background-attachment: fixed;
         color: rgb(255, 255, 255);
         text-align: center;
-        padding: 7.5em 0 10em 0;
+        padding: 7.5em 0 4em 0;
         cursor: default;
     }
 
@@ -2737,6 +2737,13 @@ input, select, textarea {
                     margin: 0 1em 0 0;
                 }
 
+            #header {
+                padding: 7.5em 0 10em 0;
+            }
+
+                #header img{
+                    max-height: 30%
+                }
     }
 
 /* Mobile */
@@ -3074,6 +3081,14 @@ input, select, textarea {
                 #header hr {
                     top: 1em;
                     margin-bottom: 2.5em;
+                }
+
+            #header {
+                padding: 7.5em 0 10em 0;
+            }
+
+                #header img{
+                    max-height: 30%
                 }
 
             body.homepage #header {
