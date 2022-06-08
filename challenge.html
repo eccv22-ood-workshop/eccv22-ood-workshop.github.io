@@ -74,8 +74,10 @@
                             <p>
                                 The goal of our OOD-CV benchmark is do diagnose robustness of computer vision models to <b>out-of-distribution shifts</b> in the data.
                                 To achieve this goal, the benchmark consists of a <b>fixed training set</b> with 10 object categories (aeroplane, bus, car, train, boat, bicycle, motorplane, chair, dining table, sofa) 
-                                from the PASCAL VOC 2012 and ImageNet datasets. Based on the fixed training set, the test set is designed such that each test example is subject to an 
-                                out-of-distribution shift in one specific nuisance, such as the object's 3D <b>pose</b>, <b>shape</b>, <b>texture</b>, <b>context</b>, the <b>weather</b>, and <b>occlusion</b>.
+                                from the PASCAL VOC 2012 and ImageNet datasets. 
+                                Note that only our provided training data can be used to train a model and <b>using outside training data is not allowed</b>. 
+                                This restriction enables us to design the test set such that each test example is subject to an 
+                                out-of-distribution shift in one specific nuisance w.r.t. the training data, such as the object's 3D <b>pose</b>, <b>shape</b>, <b>texture</b>, <b>context</b>, the <b>weather</b>, and <b>occlusion</b>.
                             </p>                                
                                  <p>
                                     <img src="images/overview.png" width="100%"/>
