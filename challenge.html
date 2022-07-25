@@ -104,13 +104,20 @@
 
                             <section>
                                 <header>
-                                    <h3>Evaluation</h3>
+                                    <h3>Benchmark Scoring</h3>
                                 </header>
                                 <p>
-                                    The final test set will <b>not</b> be publicly available for competitors to download, 
-                                    but it will instead be hosted on a Codalab server.
-                                    Competitors are asked to upload their trained models via Codalab, which will then be tested on the private test set. 
-                                    In this way we aim to ensure that the test set will not be overfitted during the competition.
+                                    Our aim is to measure model robustness w.r.t. OOD nuisance factors. Therefore, the final benchmark scoring is <b>data and accuracy constrained</b>. 
+									This means, that to be valid a submission must: <br>
+									1) Only use the training data that 	we provide. Using outside data is not allowed.<br> 
+									2) The model’s accuracy on the <u>I.I.D. test set</u> must be lower than a pre-defined threshold (which is defined by the performance of a baseline model).<br> 
+									The final benchmark score is then measured as average performance on the held-out O.O.D. test set.<br><br>
+									
+									The <b>I.I.D. accuracy thresholds</b> are as follows:<br>
+									Image Classification = <b>91.1 [classification accuracy]</b><br>
+									Object Detection = <b>79.9 [mIoU]</b><br>
+									Pose Estimation  = <b>68.7 [pi/6]</b><br>
+									Each accuracy threshold was determined by training the baseline models (see paper and Github repo) five times, followed by computing the mean performance and adding three standard deviations. 
                                 </p>
                             </section>
 
@@ -119,7 +126,7 @@
                                     <h3>Submission</h3>
                                 </header>
                                 <p>
-                                    We expect the Codalab submission site to be online by the end of June. Until then, the competitors can evlauate their models on the publicly availabele validation set.
+                                    You can find instructions on the submission, data and baseline models on our Github page: <b><a href="https://github.com/eccv22-ood-workshop/ROBIN-dataset">https://github.com/eccv22-ood-workshop/ROBIN-dataset</a></b>
                                 </p>
                             </section>
                             
@@ -128,13 +135,25 @@
                                     <h3>Prizes</h3>
                                 </header>
                                 <p>
-                                    The top-performing teams will be invited to publish in <b><a href="https://www.springer.com/journal/11263/updates/20293358">an IJCV special issue</a></b>.
-                                    The winners and runner-ups in each challenge track will share a <b>prize pool of 10'000 USD</b> which is sponsored by the Future Fund Regranting Program.
-                                    All prize winners (i.e. winning submissions and runner-ups) will be required to either publish their code online, or 
-                                    send us their code privately, such that we can verify that no outside data has been used.     
+                                    The winners of each track will be invited to submit a paper to <b><a href="https://www.springer.com/journal/11263/updates/20293358">an IJCV special issue</a></b>.
+                                    The top-3 submissions across all challenge tracks will share a <b>prize pool of 10'000 USD</b> which is sponsored by the Future Fund Regranting Program.
+                                    All prize winners will be required to write a summary of their method and share it publicly on arXiv.<br><br>
+									
+									<b>Image Classification Track</b><br>
+									🥇 1st place: $2,000<br>
+									🥈 2nd place: $1,000<br>
+									🥉 3rd place: $300<br><br>
+									<b>Object Detection Track</b><br>
+									🥇 1st place: $2,000<br>
+									🥈 2nd place: $1,000<br>
+									🥉 3rd place: $300<br><br>
+									<b>Pose Estimation Track</b><br>
+									🥇 1st place: $2,000<br>
+									🥈 2nd place: $1,000<br>
+									🥉 3rd place: $300<br>
                                 </p>
                             </section>
-                            <h3><u>Important Dates (Tentative)</u></h3>
+                            <h3><u>Important Dates</u></h3>
                             <div class="trend-entry d-flex"> 
                                 <table class="table table-striped">
                                     <thead>
@@ -149,12 +168,12 @@
                                         <td>June 6th, 2022</td>
                                     </tr> 
                                     <tr>
-                                        <td>Phase-1 starts: Codalab open with inital test set</td>
+                                        <td>Phase-1 starts: Public release of inital test set</td>
                                         <td>June 30th, 2022</td>
                                     </tr>
                                     <tr>
                                         <td>Phase-2: Final test set released on Codalab</td>
-                                        <td>August 30th, 2022</td>
+                                        <td>September 25th, 2022</td>
                                     </tr>
                                     <tr>
                                         <td>Submission deadline</td>
@@ -173,22 +192,45 @@
                             </div>
                             <section>
                                 <header>
-                                    <h3>Citing</h3>
+                                    <h3>Citation</h3>
                                 </header>
                                 <p>
                                     If you find the dataset or challenge useful for your research, please cite the paper.
                                 </p>
                                 <pre style="background-color: #e2e2e2; border: 0px dotted #818181; padding: 0px;">			
                                     <span class="inner-pre" style="font-size: 18px">
-                                    @article{zhao21robin,
+                                    @article{zhao22oodcv,
                                         author  = {Bingchen Zhao and Shaozuo Yu and Wufei Ma and Mingxin Yu and Shenxiao Mei and Angtian Wang and Ju He and Alan Yuille and Adam Kortylewski},
-                                        title   = {ROBIN: A Benchmark for Robustness to Individual Nuisances in Real-World Out-of-Distribution Shifts},
-                                        journal = {arXiv preprint arXiv:2111.14341},
-                                        year    = {2021}
+                                        title   = {OOD-CV: A Benchmark for Robustness to Out-of-Distribution Shifts of Individual Nuisances in Natural Images},
+                                        journal = {Proceedings of the European Conference on Computer Vision (ECCV)},
+                                        year    = {2022}
                                     }			
                                     </span>
                                 </pre>
                             </section>
+							
+                            <section>
+                                <header>
+                                    <h3>Eligibility</h3>
+                                </header>
+                                <p>
+									To be eligible for prizes, winning teams are required to share their methods, code, and models with the organizers as well as the names and associations of each team member.									
+									This workshop is sponsored by the FTX Future Fund regranting program. 
+									We cannot give awards to teams on US terrorist lists or those subject to sanctions. 
+									Sponsor may confirm the legality of sending prize money to winners who are residents of countries outside of the United States. 
+									Winners will be announced prior to the workshop, and workshop organizers will judge the submissions. Only authors on awarded papers are winners. 
+									All decisions of judges are final. The legality of accepting the prize in his or her country is the responsibility of the winners. 
+									All taxes are the responsibility of the winners. Employees or current contractors of FTX and contest organizers are not eligible to win prizes. 
+									Entrants must be over the age of 18. By entering the contest, entrants agree to the Terms & Conditions. 
+									Entrants agree that FTX shall not be liable to entrants for any type of damages that arise out of or are related to the contest and/or the prizes. 
+									By submitting an entry, entrant represents and warrants that, consistent with the terms of the Terms and Conditions: (a) the entry is entrant’s original work; 
+									(b) entrant owns any copyright applicable to the entry; (c) the entry does not violate, in whole or in part, any existing copyright, trademark, patent or any other intellectual property right of any other person, organization or entity; 
+									(d) entrant has confirmed and is unaware of any contractual obligations entrant has which may be inconsistent with these Terms and Conditions and the rights entrant is required to have in the entry, including but not limited to any prohibitions, 
+									obligations or limitations arising from any current or former employment arrangement entrant may have; (e) entrant is not disclosing the confidential, trade secret or proprietary information of any other person or entity, 
+									including any obligation entrant may have in connection arising from any current or former employment, without authorization or a license; and (f) entrant has full power and all legal rights to submit an entry in full compliance with these Terms and Conditions.
+
+                                </p>
+                            </section>							
                         </article>
                     </div>
 
