@@ -3175,7 +3175,11 @@ input, select, textarea {
   
   .instructor {
     display: inline-block;
-    width: 180px;
+    width: 220px;
     text-align: center;
     margin-right: 10px;
   }
+
+.pcs-column {
+    flex: 50%;
+}
