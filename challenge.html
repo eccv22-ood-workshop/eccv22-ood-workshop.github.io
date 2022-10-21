@@ -57,6 +57,120 @@
                 </div>
 
             <!-- Main -->
+            <div class="wrapper style1">
+
+                <div class="container">
+                    <article id="main" class="special">
+                        <header>
+                            <h2><a href="#">Challenge Winners</a></h2>
+                        </header>
+
+                        <section>
+                            <header>
+                                <h2><a href="#">Image Classification</a></h2>
+                            </header>
+                            <div class="trend-entry d-flex"> 
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col"> Rank</th>
+                                        <th scope="col"> Winners</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody> 
+                                    <tr>
+                                        <td>🥇 1st place $2,000</td>
+                                        <td>Yilu Guo, Xingyue Shi, Weijie Chen, Shicai Yang, Di Xie, Shiliang Pu, Yueting Zhuang</td>
+                                    </tr> 
+                                    <tr>
+                                        <td>🥈 2nd place $1,000</td>
+                                        <td>Jun Yu, Keda Lu, Hao Chang, Mohan Jing, Xiaohua Qi, Liwen Zhang, Zhihong Wei, Ye Yu, Fang Gao</td>
+                                    </tr>
+                                    <tr>
+                                        <td>🥉 3rd place $300</td>
+                                        <td>Yuanpeng Tu, Kai Wu, Boshen Zhang, Yong Liu</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4th place</td>
+                                        <td>Manxi Lin, Yu Ji, Shengkai Wang</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+
+                        
+                        <section>
+                            <header>
+                                <h2><a href="#">Object Detection</a></h2>
+                            </header>
+                            <div class="trend-entry d-flex"> 
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col"> Rank</th>
+                                        <th scope="col"> Winners</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody> 
+                                    <tr>
+                                        <td>🥇 1st place $2,000</td>
+                                        <td>Wei Zhao, Binbin Chen, Weijie Chen, Shicai Yang, Di Xie, Shiliang Pu, Yueting Zhuang</td>
+                                    </tr> 
+                                    <tr>
+                                        <td>🥈 2nd place $1,000</td>
+                                        <td>Tae-Hyong Kim, Jahongir Yunusov, Shohruh Rakhmatov, Abdulaziz Namozov, Ki-Hwan Lee, Adnan Md Tayeb</td>
+                                    </tr>
+                                    <tr>
+                                        <td>🥉 3rd place $300</td>
+                                        <td>Jun Yu, Keda Lu, Hao Chang, Mohan Jing, Xiaohua Qi, Liwen Zhang, Zhihong Wei, Ye Yu, Fang Gao</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4th place</td>
+                                        <td>Zining Chen, Tianyi Wang</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+
+                        
+                        <!-- <section>
+                            <header>
+                                <h2><a href="#">Pose Estimation</a></h2>
+                            </header>
+                            <div class="trend-entry d-flex"> 
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col"> Rank</th>
+                                        <th scope="col"> Winners</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody> 
+                                    <tr>
+                                        <td>🥇 1st place $2,000</td>
+                                        <td>Yilu Guo, Xingyue Shi, Weijie Chen, Shicai Yang, Di Xie, Shiliang Pu, Yueting Zhuang</td>
+                                    </tr> 
+                                    <tr>
+                                        <td>🥈 2nd place $1,000</td>
+                                        <td>Jun Yu, Keda Lu, Hao Chang, Mohan Jing, Xiaohua Qi, Liwen Zhang, Zhihong Wei, Ye Yu, Fang Gao</td>
+                                    </tr>
+                                    <tr>
+                                        <td>🥉 3rd place $300</td>
+                                        <td>Yuanpeng Tu, Kai Wu, Boshen Zhang, Yong Liu</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4th place</td>
+                                        <td>Manxi Lin, Yu Ji, Shengkai Wang</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div> -->
+                        </section>
+                    </article>
+                </div>
+            </div>
 
                 <div class="wrapper style1">
 
@@ -67,25 +181,25 @@
                             </header>
 
                             <section>
-                            <header>
-                                <h2><a href="#">Dataset</a></h2>
-                              </header>
-                            <section>
-                            <p>
-                                The goal of our OOD-CV benchmark is do diagnose robustness of computer vision models to <b>out-of-distribution shifts</b> in the data.
-                                To achieve this goal, the benchmark consists of a <b>fixed training set</b> with 10 object categories (aeroplane, bus, car, train, boat, bicycle, motorplane, chair, dining table, sofa) 
-                                from the PASCAL VOC 2012 and ImageNet datasets. 
-                                Note that only our provided training data can be used to train a model and <b>using outside training data is not allowed</b>. 
-                                This restriction enables us to design the test set such that each test example is subject to an 
-                                out-of-distribution shift in one specific nuisance w.r.t. the training data, such as the object's 3D <b>pose</b>, <b>shape</b>, <b>texture</b>, <b>context</b>, the <b>weather</b>, and <b>occlusion</b>.
-                                <br><br>
-                                The OOD-CV challenge has three tracks. Each track will focus on one computer vision task, including <b>image classification, object detection and 3D pose estimation</b>. The winners of each track will be invited to contribute to an IJCV special issue.
-                                Moreover, the winners and runner-ups in each challenge track will share a prize pool of 10'000 USD.
-                            </p>                                
-                                 <p>
-                                    <img src="images/overview.png" width="100%"/>
-                                </p>
-                            </section>                                
+                                <header>
+                                    <h2><a href="#">Dataset</a></h2>
+                                </header>
+                                <p>
+                                    The goal of our OOD-CV benchmark is do diagnose robustness of computer vision models to <b>out-of-distribution shifts</b> in the data.
+                                    To achieve this goal, the benchmark consists of a <b>fixed training set</b> with 10 object categories (aeroplane, bus, car, train, boat, bicycle, motorplane, chair, dining table, sofa) 
+                                    from the PASCAL VOC 2012 and ImageNet datasets. 
+                                    Note that only our provided training data can be used to train a model and <b>using outside training data is not allowed</b>. 
+                                    This restriction enables us to design the test set such that each test example is subject to an 
+                                    out-of-distribution shift in one specific nuisance w.r.t. the training data, such as the object's 3D <b>pose</b>, <b>shape</b>, <b>texture</b>, <b>context</b>, the <b>weather</b>, and <b>occlusion</b>.
+                                    <br><br>
+                                    The OOD-CV challenge has three tracks. Each track will focus on one computer vision task, including <b>image classification, object detection and 3D pose estimation</b>. The winners of each track will be invited to contribute to an IJCV special issue.
+                                    Moreover, the winners and runner-ups in each challenge track will share a prize pool of 10'000 USD.
+                                </p>                                
+                                    <p>
+                                        <img src="images/overview.png" width="100%"/>
+                                    </p>
+                            </section>
+
                             <section>
                                 <header>
                                     <h3>Data and Baselines</h3>
@@ -93,13 +207,12 @@
                                 <p>
                                     The training data, validation data and code for the baseline models can be downloaded from this website: <b><a href="https://github.com/eccv22-ood-workshop/ROBIN-dataset">https://github.com/eccv22-ood-workshop/ROBIN-dataset</a></b><br><br>
                                     
-                                     
+                                        
                                     The final test set will not be publicly available (see details of the evaluation process below).                                   
                                     Note that the training set is fixed and <b>the use any outside data is not allowed</b>.
                                     All prize winners (i.e. winning submissions and runner-ups) will be required to either publish their code online, or 
                                     send us their code privately, such that we can verify that no outside data has been used.                                    
                                 </p>
-                            </section>
                             </section>
 
                             <section>
