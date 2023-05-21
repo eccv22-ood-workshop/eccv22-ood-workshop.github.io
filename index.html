@@ -102,8 +102,11 @@
                         <!-- <p>Mention the discussion on webly pretrained models.</p> -->
                         <p>Deep learning models are usually developed and tested under the implicit assumption that the training and test data are drawn independently and identically distributed (<b>IID</b>) from the same distribution. 
                             Overlooking out-of-distribution (<b>OOD</b>) images can result in poor performance in unseen or adverse viewing conditions, which is common in real-world scenarios.</p>
-                        <p>This competition aims to tackle typical computer vision tasks (i.e. <b>Multi-class Classification</b>, <b>Object Detection</b>, ...) on <b>OOD</b> images which follows a different distribution than the training images.</p>
-                        
+                        <!-- <p>This competition aims to tackle typical computer vision tasks (i.e. <b>Multi-class Classification</b>, <b>Object Detection</b>, ...) on <b>OOD</b> images which follows a different distribution than the training images.</p> -->
+                        <p>In this workshop, we are interested in discussing the performance of computer vision models on <b>OOD</b> images which follows a different distribution than the training images.
+                        Also given the current trend of web-scale pretrained computer vision models, it is of interest to better understand their performance in the <b>OOD</b> or <b>rare</b> scenarios.</p>
+                        <p>Our workshop will be featuring three competitions, OOD generalization on the <a href="https://bzhao.me/OOD-CV">OOD-CV</a> dataset, open-set recognition and generalized category discovery on the <a href="https://www.robots.ox.ac.uk/~vgg/research/osr/">Semantic-shift benchmark.</a>
+                       
                         <!-- <p>The dataset can be accessed at <a href="https://bzhao.me/OOD-CV">https://bzhao.me/OOD-CV</a></p> -->
                     </article>
 
@@ -117,7 +120,36 @@
                                 <h2><a href="#">Submission Information</a></h2>
                             </header>
 
-                            TBD
+                            We invite submissions of short papers on the topic of <b>out-of-distribution generalization in computer vision</b>.
+                            The short papers should use the <a href=“https://cvpr2022.thecvf.com/sites/default/files/2021-10/cvpr2022-author_kit-v1_1-1.zip”>CVPR template</a> and be max. <b>4 pages</b> long.
+                            Please see <a href="paper.html">here</a> for submission informations.
+
+                        </article>
+                    </div>
+
+                </div>
+
+                <div class="wrapper style1">
+
+                    <div class="container">
+                        <article id="main" class="special">
+                            <header>
+                                <h2><a href="#">Challenge Information</a></h2>
+                            </header>
+                            This workshop will feature three challenges:
+                            <ul>
+                                <li><a href="challenge.html#challenge1">OOD-CV</a></li>
+                                <li><a href="challenge.html#challenge2">Open-Set Recognition</a></li>
+                                <li><a href="challenge.html#challenge3">Generalized Category Discovery</a></li>
+                            </ul>
+                            Please see <a href="challenge.html">here</a> for more information.
+                            <p>
+                                Each challenge will have two tracks, one track will limit the use of pretrained models to self-supervised pretrained models on ImageNet-1k and the other track will allow the use of any self-supervised pretrained models.
+                            </p>
+                            <p>
+                                The top-3 teams are required to open source their code and models after the competition to ensure reproducibility.
+                            </p>
+
 
                         </article>
                     </div>
