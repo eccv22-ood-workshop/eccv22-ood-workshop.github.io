@@ -93,12 +93,14 @@
                                 <b><u><a href="#SSB">SSB</a></u></b>
                                 <br/>
                                 The Semantic Shift Benchmark (SSB) challenge focuses on <u>open-set recognition</u> and the <u>generalized category discovery</u> problem.
-                                The dataset of SSB can be accessed from <a href="https://www.robots.ox.ac.uk/~vgg/research/osr/">[here]</a>. 
+                                The SSB benchmark can be accessed from <a href="https://www.robots.ox.ac.uk/~vgg/research/osr/">[here]</a> or <a href="https://github.com/sgvaze/SSB">[here]</a>. 
                                 For an understanding of the generalized category discovery problem, the readers can refer to the works <a href="https://www.robots.ox.ac.uk/~vgg/research/gcd/">[here]</a> and <a href="https://github.com/CVMI-Lab/SimGCD">[here]</a>.
                                 <br/>
-                                <b>Track-1: Open-Set Recognition: </b> TBD.
+                                <b>Track-1: Open-Set Recognition: </b> This track evaluates the ability of the model to identify open-set examples. This track has only one leaderboard, only models that are not trained on ImageNet-22k can be submitted. 
+                                The ranking will be determined based on the average score of FPR and AUROC.
                                 <br/>
-                                <b>Track-2: Generalized Category Discovery: </b> This track evaluates the ability of the model to discover and recognize novel concepts within an unlabeled dataset.
+                                <b>Track-2: Generalized Category Discovery: </b> This track evaluates the ability of the model to discover and recognize novel concepts within an unlabeled dataset. This track has two leaderboard, one for self-supervised pretrained models on ImageNet-1k, one for any self-supervised pretrained models.
+                                The ranking will be determined based on the average clustering accuracy on all three datasets in the FGVC dataset from SSB benchmark.
                         </article>
                     </div>
                     <br/>
@@ -131,11 +133,11 @@
                                         </tr>
                                         <tr>
                                             <td>SSB: Open-Set Recognition</td>
-                                            <td><a href="">[ImageNet-1k only]</a> <a href="">[Any Self-Supervised]</a></td>
+                                            <td><a href="https://codalab.lisn.upsaclay.fr/competitions/14979?secret_key=46fdc737-fa22-4965-b0ef-46716046e90c">[ImageNet-1k only]</a> 
                                         </tr>
                                         <tr>
                                             <td>SSB: Generalized Category Discovery</td>
-                                            <td><a href="https://codalab.lisn.upsaclay.fr/competitions/14072?secret_key=6483f32e-cbc9-4092-ba01-52dd1995976b">[ImageNet-1k only]</a> <a href="https://codalab.lisn.upsaclay.fr/competitions/14073?secret_key=ebdcbba7-8e72-4005-b9ba-4983971ab5b2">[Any Self-Supervised]</a></td>
+                                            <td><a href="https://codalab.lisn.upsaclay.fr/competitions/14980?secret_key=0684e806-24b5-4c66-a68f-41be499f8ae7">[ImageNet-1k only]</a> <a href="https://codalab.lisn.upsaclay.fr/competitions/14981?secret_key=9d27825d-f960-4706-a904-67641d1f990f">[Any Self-Supervised]</a></td>
                                         </tr>
                                         </tbody>
                                     </table>
