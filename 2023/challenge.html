@@ -1,0 +1,237 @@
+<!DOCTYPE HTML>
+<!--
+    Helios by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Challenge - OOD-CV</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/user.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="no-sidebar is-preload">
+        <div id="page-wrapper">
+
+            <!-- Header -->
+                <div id="header">
+
+                    <!-- Inner -->
+                    <div class="inner">
+                        <header>
+                            <!--<h1 class="highlight"><a href="index.html" id="logo">
+                                <span>OOD</span>
+                                <span style="color: inherit">-</span>
+                                <span>CV</span></a></h1>-->
+                            <h1>
+                                <span class="highlight">O</span>
+                                ut
+                                <span class="highlight">O</span>
+                                f
+                                <span class="highlight">D</span>
+                                istribution
+                                Generalization
+                                in
+                                <span class="highlight">C</span>
+                                omputer
+                                <span class="highlight">V</span>
+                                ision
+                            </h1>
+                            <h4>in conjunction with <a href="https://iccv2023.thecvf.com/">ICCV 2023</a></h4>
+                        </header>
+                    </div>
+                    <!-- <a href="https://www.springer.com/journal/11263/updates/20293358"><img class="ijcv-logo" src="images/ijcv_specail_issue_short.png"></a> -->
+
+                    <!-- Nav -->
+                    <nav id="nav">
+                        <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="challenge.html">Challenge</a></li>
+                                <li><a href="paper.html">Call for Papers</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+            <!-- Main -->
+
+                <div class="wrapper style1">
+
+                    <div class="container">
+                        <article id="main" class="special">
+                            <header>
+                                <h2><a href="#">Challenge Instruction</a></h2>
+                            </header>
+
+                            <p>
+                                <b>Overview: </b>
+                                Our workshop will be featuring two challenges: OOD-CV and SSB. 
+                                The two challenges are hosted on CodaLab.
+                                For all challenge tracks, we will have two separate leaderboards: one for the <b>ImageNet-1k only</b> pretrained models (can only pretrain models on ImageNet-1k dataset) and one for <b>self-supervised pretrained</b> models (can pretrain the models on any dataset but can only use self-supervised learning).
+                                The challenge tracks are described below.
+                                <br/>
+                                <br/>
+                                <b><u><a href="#OOD-CV">OOD-CV</a></u></b>
+                                <br/>
+                                The OOD-CV challenge focuses on <u>out-of-distribution generalization</u> in computer vision, the out-of-distribution shift can 
+                                The data can be accessed from <b>https://github.com/OOD-CV/OOD-CV</b> or <b><a href="https://drive.google.com/drive/folders/1eCzhLJn9tNFDgrsHJrXzOBchpkIIC07a?usp=sharing">[here]</a></b>. 
+                                Additionally, a tool and a baseline for the 3D pose-estimation is available from <b>https://github.com/OOD-CV/OOD-CV-Pose</b>.
+                                You can learn more about the dataset from <b><a href="https://arxiv.org/abs/2304.10266">[here]</a></b>.
+                                If you wish to access the full dataset and replicate the experiments in our paper, please see <b><a href="https://bzhao.me/OOD-CV/">[here]</a></b>.
+
+                                <br/>
+                                <b>Track-1: Object Classification: </b> This track evaluates the performance of a classification model on out-of-distribution (OOD) data using the top-1 accuracy. The ranking will be determined by the average top-1 accuracy on the OOD datasets.
+                                <br/>
+                                <b>Track-2: Object Detection: </b> This track evaluates the performance of a detection model on OOD data. Evaluation will be done using the mAP metric, the final ranking will be determined by the average mAP on the OOD datasets.
+                                <br/>
+                                <b>Track-3: 3D Pose Estimation: </b> This track evaluates the performance of a 3D pose estimation model on OOD data. The ranking will be determined by the average Acc@π/6 on the OOD datasets.
+                                <br/>
+                                <br/>
+                                <b><u><a href="#SSB">SSB</a></u></b>
+                                <br/>
+                                The Semantic Shift Benchmark (SSB) challenge focuses on <u>open-set recognition</u> and the <u>generalized category discovery</u> problem.
+                                The SSB benchmark can be accessed from <a href="https://www.robots.ox.ac.uk/~vgg/research/osr/">[here]</a> or <a href="https://github.com/sgvaze/SSB">[here]</a>. 
+                                For an understanding of the generalized category discovery problem, the readers can refer to the works <a href="https://www.robots.ox.ac.uk/~vgg/research/gcd/">[here]</a> and <a href="https://github.com/CVMI-Lab/SimGCD">[here]</a>.
+                                <br/>
+                                <b>Track-1: Open-Set Recognition: </b> This track evaluates the ability of the model to identify open-set examples. This track has only one leaderboard, only models that are not trained on ImageNet-22k can be submitted. 
+                                The ranking will be determined based on the average score of FPR and AUROC.
+                                A baseline is provided <a href="https://github.com/sgvaze/SSB/blob/main/examples/evaluate_osr.py">[here]</a>.
+                                <br/>
+                                <b>Track-2: Generalized Category Discovery: </b> This track evaluates the ability of the model to discover and recognize novel concepts within an unlabeled dataset. This track has two leaderboard, one for self-supervised pretrained models on ImageNet-1k, one for any self-supervised pretrained models.
+                                The ranking will be determined based on the average clustering accuracy on all three datasets in the FGVC dataset from SSB benchmark.
+                                We provide a baseline for GCD <a href="https://github.com/OOD-CV/SimGCD-ICCV-Challenge">[here]</a>.
+                        </article>
+                    </div>
+                    <br/>
+                    <div class="container">
+                        Please find the challenge report template <a href="https://github.com/eccv22-ood-workshop/eccv22-ood-workshop.github.io/blob/new/challenge_report.tex">[here]</a>. Please submit the finished challenge report to <a href="mailto:ood-cv-challenge@googlegroups.com">this email</a>.
+                    </div>
+                </div>
+
+                <div class="wrapper style1">
+                    <div class="container">
+                            <h3><u>Challenge Reports</u></h3>
+                            <br/>
+                                <div class="trend-entry d-flex">
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col"> Track</th>
+                                            <th scope="col"> Links</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>OOD-CV: Classification</td>
+                                            <td><a href="reports/cls/ImageNet1k-1st.pdf">[ImageNet-1k only]</a> <a href="reports/cls/Self-supervised-1st.pdf">[Any Self-Supervised]</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>OOD-CV: Detection</td>
+                                            <td><a href="reports/det/ImageNet1k-1st.pdf">[ImageNet-1k only]</a> <a href="reports/det/Self-supervised-1st.pdf">[Any Self-Supervised]</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>OOD-CV: Pose Estimation</td>
+                                            <td><a href="reports/pose/ImageNet1k-1st.pdf">[ImageNet-1k only]</a> <a href="reports/pose/Self-supervised-1st.pdf">[Any Self-Supervised]</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>SSB: Open-Set Recognition</td>
+                                            <td><a href="reports/ssb/osr/ImageNet-1k-1st.pdf">[ImageNet-1k only]</a> 
+                                        </tr>
+                                        <tr>
+                                            <td>SSB: Generalized Category Discovery</td>
+                                            <td><a href="reports/ssb/gcd/ImageNet1k-1st.pdf">[ImageNet-1k only]</a> <a href="reports/ssb/gcd/Self-supervised-1st.pdf">[Any Self-Supervised]</a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                    </div>
+                </div>
+                        
+                <div class="wrapper style1">
+                    <div class="container">
+                            <h3><u>Challenge Servers</u></h3>
+                            <br/>
+                                <div class="trend-entry d-flex">
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col"> Track</th>
+                                            <th scope="col"> Links</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>OOD-CV: Classification</td>
+                                            <td><a href="https://codalab.lisn.upsaclay.fr/competitions/14068?secret_key=b533d059-0b6d-4b81-88bd-cc7984b977b3">[ImageNet-1k only]</a> <a href="https://codalab.lisn.upsaclay.fr/competitions/14069?secret_key=a5c16070-f387-4f12-96c4-af3e37079513">[Any Self-Supervised]</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>OOD-CV: Detection</td>
+                                            <td><a href="https://codalab.lisn.upsaclay.fr/competitions/14070?secret_key=31c58099-65dd-4b63-908d-15437130640d">[ImageNet-1k only]</a> <a href="https://codalab.lisn.upsaclay.fr/competitions/14071?secret_key=9ab064a3-51d6-431c-a2f8-55246b659f2a">[Any Self-Supervised]</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>OOD-CV: Pose Estimation</td>
+                                            <td><a href="https://codalab.lisn.upsaclay.fr/competitions/14074?secret_key=7dd53691-ebda-4733-a1dc-130e9c8c5cf7">[ImageNet-1k only]</a> <a href="https://codalab.lisn.upsaclay.fr/competitions/14075?secret_key=d0063048-78cf-459c-b81c-35b1d10fffc2">[Any Self-Supervised]</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>SSB: Open-Set Recognition</td>
+                                            <td><a href="https://codalab.lisn.upsaclay.fr/competitions/14979?secret_key=46fdc737-fa22-4965-b0ef-46716046e90c">[ImageNet-1k only]</a> 
+                                        </tr>
+                                        <tr>
+                                            <td>SSB: Generalized Category Discovery</td>
+                                            <td><a href="https://codalab.lisn.upsaclay.fr/competitions/14980?secret_key=0684e806-24b5-4c66-a68f-41be499f8ae7">[ImageNet-1k only]</a> <a href="https://codalab.lisn.upsaclay.fr/competitions/14981?secret_key=9d27825d-f960-4706-a904-67641d1f990f">[Any Self-Supervised]</a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                        
+                            <h3><u>Important Dates</u></h3>
+                            <div class="trend-entry d-flex"> 
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col"> Description</th>
+                                        <th scope="col"> Date</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody> 
+                                    <tr>
+                                        <td>Phase-1 starts</td>
+                                        <td>June 20th, 2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Phase-2 ends</td>
+                                        <td>September 12th, 2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Challenge report and code deadline</td>
+                                        <td>September 18th, 2023</td>
+                                    </tr>
+                                  <!--   <tr>
+                                        <td>Poster</td>
+                                        <td>10:00-11:00, June 16, 2021</td>
+                                    </tr> -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                </div>
+
+
+        </div>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.dropotron.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
